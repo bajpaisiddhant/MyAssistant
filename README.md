@@ -15,7 +15,7 @@ def speak(audio):   #speak function
     engine.say(audio)
     engine.runAndWait()
 
-def wishMe():
+def wishMe(): #what the assistant wish
     hour=int(datetime.datetime.now().hour)
     if hour>=0 and hour<12:
         speak("Good Morning")
